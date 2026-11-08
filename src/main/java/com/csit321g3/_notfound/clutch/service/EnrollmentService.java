@@ -35,9 +35,11 @@ public class EnrollmentService {
 
         try {
             enrollment = erepo.findById(id).get(); 
-            enrollment.setStudentId(newEnrollmentDetails.getStudentId());
+            enrollment.setEnrollmentId(newEnrollmentDetails.getEnrollmentId());
+            enrollment.setUserId(newEnrollmentDetails.getUserId());
             enrollment.setCourseId(newEnrollmentDetails.getCourseId());
-            enrollment.setEnrollmentDate(newEnrollmentDetails.getEnrollmentDate());
+            enrollment.setCurrentGrade(newEnrollmentDetails.getCurrentGrade());
+            enrollment.setTargetGrade(newEnrollmentDetails.getTargetGrade   ());
             return erepo.save(enrollment);
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
