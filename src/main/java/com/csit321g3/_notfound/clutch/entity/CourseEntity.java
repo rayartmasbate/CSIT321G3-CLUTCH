@@ -1,4 +1,4 @@
-package com.csit321g3._notfound.entity;
+package com.csit321g3._notfound.clutch.entity;
 
 import jakarta.persistence.*;
 
