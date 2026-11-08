@@ -1,5 +1,4 @@
 package com.csit321g3._notfound.clutch.entity;
-
 import jakarta.persistence.*;
 
 @Entity
@@ -19,13 +18,12 @@ public class EnrollmentEntity {
     }
 
     // Parameterized Constructor
-    public EnrollmentEntity(Long enrollmentId, Long userId, Long courseId, Double currentGrade, Double targetGrade, EnrollmentStatus status) {
+    public EnrollmentEntity(Long enrollmentId, Long userId, Long courseId, Double currentGrade, Double targetGrade) {
         this.enrollmentId = enrollmentId;
         this.userId = userId;
         this.courseId = courseId;
         this.currentGrade = currentGrade;
         this.targetGrade = targetGrade;
-        this.status = status;
     }
 
     // Getters and Setters
@@ -69,11 +67,4 @@ public class EnrollmentEntity {
         this.targetGrade = targetGrade;
     }
 
-    public EnrollmentStatus getStatus() {
-        return status;
-    }
-
-    public void setStatus(EnrollmentStatus status) {
-        this.status = status;
-    }
 }
