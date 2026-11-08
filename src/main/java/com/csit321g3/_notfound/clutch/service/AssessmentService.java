@@ -34,10 +34,11 @@ public class AssessmentService {
 
         try {
             assessment = arepo.findById(id).get();
-            assessment.setAssessmentName(newAssessmentDetails.getAssessmentName());
-            assessment.setDescription(newAssessmentDetails.getDescription());
-            assessment.setTotalScore(newAssessmentDetails.getTotalScore());
-            assessment.setCourseId(newAssessmentDetails.getCourseId());
+            assessment.setAssessmentId(newAssessmentDetails.getAssessmentId());
+            assessment.setComponentId(newAssessmentDetails.getComponentId());
+            assessment.setTitle(newAssessmentDetails.getTitle());
+            assessment.setMaxScore(newAssessmentDetails.getMaxScore());
+            assessment.setDueDate(newAssessmentDetails.getDueDate());
             return arepo.save(assessment);
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
