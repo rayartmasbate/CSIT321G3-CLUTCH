@@ -1,5 +1,5 @@
 package com.csit321g3._notfound.clutch.entity;
-
+import java.time.LocalDateTime;
 import jakarta.persistence.*;
 
 @Entity 
@@ -57,7 +57,6 @@ public class AssessmentEntity {
     public Long getAssessmentId() {
         return assessmentId;
     }
-
     
     
 }
