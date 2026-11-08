@@ -3,6 +3,7 @@ package com.csit321g3._notfound.clutch.service;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.csit321g3._notfound.clutch.entity.AssessmentEntity;
 import com.csit321g3._notfound.clutch.repository.AssessmentRepository;
 
 @Service 
