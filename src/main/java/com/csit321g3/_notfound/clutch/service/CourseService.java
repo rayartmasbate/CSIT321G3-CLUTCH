@@ -13,6 +13,10 @@ public class CourseService {
 
     public CourseService() {}
 
+    public CourseService(CourseRepository crepo) {
+        this.crepo = crepo;
+    }
+
     // Create
     public CourseEntity createCourse(CourseEntity course) {
         return crepo.save(course);

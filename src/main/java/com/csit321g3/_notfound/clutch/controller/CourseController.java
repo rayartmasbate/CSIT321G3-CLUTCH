@@ -29,13 +29,13 @@ public class CourseController {
 
     // Update
     @PutMapping("/updateCourse")
-    public CourseEntity updateCourse(@RequestParam Long id, @RequestBody CourseEntity course) {
-        return cserv.putCourse(id, course);
+    public CourseEntity updateCourse(@RequestParam Long courseId, @RequestBody CourseEntity course) {
+        return cserv.putCourse(courseId, course);
     }
 
     // Delete
-    @DeleteMapping("/deleteCourse/{id}")
-    public void deleteCourse(@PathVariable Long id) {
-        cserv.deleteCourse(id);
+    @DeleteMapping("/deleteCourse/{courseId}")
+    public void deleteCourse(@PathVariable Long courseId) {
+        cserv.deleteCourse(courseId);
     }
 }

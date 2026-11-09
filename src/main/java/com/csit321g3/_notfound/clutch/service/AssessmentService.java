@@ -34,7 +34,6 @@ public class AssessmentService {
 
         try {
             assessment = arepo.findById(id).get();
-            assessment.setAssessmentId(newAssessmentDetails.getAssessmentId());
             assessment.setComponentId(newAssessmentDetails.getComponentId());
             assessment.setTitle(newAssessmentDetails.getTitle());
             assessment.setMaxScore(newAssessmentDetails.getMaxScore());

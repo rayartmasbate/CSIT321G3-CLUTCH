@@ -35,7 +35,6 @@ public class EnrollmentService {
 
         try {
             enrollment = erepo.findById(id).get(); 
-            enrollment.setEnrollmentId(newEnrollmentDetails.getEnrollmentId());
             enrollment.setUserId(newEnrollmentDetails.getUserId());
             enrollment.setCourseId(newEnrollmentDetails.getCourseId());
             enrollment.setCurrentGrade(newEnrollmentDetails.getCurrentGrade());
