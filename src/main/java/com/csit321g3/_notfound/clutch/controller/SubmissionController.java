@@ -8,7 +8,7 @@ import com.csit321g3._notfound.clutch.service.SubmissionService;
 import com.csit321g3._notfound.clutch.entity.SubmissionEntity;
 
 @RestController
-@RequestMapping("/submission/api")
+@RequestMapping("/api/submissions")
 @CrossOrigin(origins = "http://localhost:3306")
 public class SubmissionController {
 
