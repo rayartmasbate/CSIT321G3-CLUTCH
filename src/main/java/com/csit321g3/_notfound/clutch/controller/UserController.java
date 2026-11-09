@@ -9,7 +9,7 @@ import com.csit321g3._notfound.clutch.entity.UserEntity;
 
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "http://localhost:3306")
+@CrossOrigin(origins = "http://localhost:3000")
 public class UserController {
 
     @Autowired

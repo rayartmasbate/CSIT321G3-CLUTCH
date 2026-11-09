@@ -13,6 +13,7 @@ import com.csit321g3._notfound.clutch.service.EnrollmentService;
 
 @RestController 
 @RequestMapping ("/api/enrollments")
+@CrossOrigin(origins = "http://localhost:3000")
 public class EnrollmentController {
     @Autowired 
     EnrollmentService eserv;

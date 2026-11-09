@@ -8,6 +8,7 @@ import com.csit321g3._notfound.clutch.service.AssessmentService;
 
 @RestController 
 @RequestMapping ("/api/assessments")
+@CrossOrigin(origins = "http://localhost:3000")
 public class AssessmentController {
     @Autowired 
     AssessmentService aserv;
