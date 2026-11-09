@@ -23,8 +23,8 @@ public class SubmissionController {
         this.subServ = subServ;
     }
 
-    @PostMapping("/postNewSubmission")
-    public SubmissionEntity postSubmission(@RequestBody SubmissionEntity submission) {
+    @PostMapping("/createNewSubmission")
+    public SubmissionEntity createNewSubmission(@RequestBody SubmissionEntity submission) {
         return subServ.postSubmission(submission);
     }
 
@@ -38,8 +38,8 @@ public class SubmissionController {
         return subServ.getSubmissionById(id);
     }
 
-    @PutMapping("/putSubmission")
-    public SubmissionEntity putSubmission(@RequestParam Long id, @RequestBody SubmissionEntity newSubmissionDetails) {
+    @PutMapping("/updateSubmission")
+    public SubmissionEntity updateSubmission(@RequestParam Long id, @RequestBody SubmissionEntity newSubmissionDetails) {
         return subServ.putSubmission(id, newSubmissionDetails);
     }
 

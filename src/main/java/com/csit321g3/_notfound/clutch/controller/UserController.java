@@ -9,7 +9,7 @@ import com.csit321g3._notfound.clutch.entity.UserEntity;
 
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3306")
 public class UserController {
 
     @Autowired
@@ -22,9 +22,10 @@ public class UserController {
     public UserController(UserService userv) {
         this.userv = userv;
     }
+    
 
-    @PostMapping("/postNewUser")
-    public UserEntity postUser(@RequestBody UserEntity user) {
+    @PostMapping("/createNewUser")
+    public UserEntity createNewUser(@RequestBody UserEntity user) {
         return userv.postUser(user);
     }
 
@@ -38,8 +39,8 @@ public class UserController {
         return userv.getUserById(id);
     }
 
-    @PutMapping("/putUser")
-    public UserEntity putUser(@RequestParam Long id, @RequestBody UserEntity newUserDetails) {
+    @PutMapping("/updateUser")
+    public UserEntity updateUser(@RequestParam Long id, @RequestBody UserEntity newUserDetails) {
         return userv.putUser(id, newUserDetails);
     }
 
