@@ -9,7 +9,7 @@ import com.csit321g3._notfound.clutch.entity.SubmissionEntity;
 
 @RestController
 @RequestMapping("/api/submissions")
-@CrossOrigin(origins = "http://localhost:3306")
+@CrossOrigin(origins = "http://localhost:3000")
 public class SubmissionController {
 
     @Autowired
