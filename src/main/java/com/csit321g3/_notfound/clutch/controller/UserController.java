@@ -8,7 +8,7 @@ import com.csit321g3._notfound.clutch.service.UserService;
 import com.csit321g3._notfound.clutch.entity.UserEntity;
 
 @RestController
-@RequestMapping("/user/api")
+@RequestMapping("/api/users")
 @CrossOrigin(origins = "http://localhost:3306")
 public class UserController {
 
